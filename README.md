@@ -26,7 +26,7 @@ $ bundle install
 $ rails db:migrate
 ```
 
-マイグレーション実行後、サンプルユーザーを生成します。
+マイグレーション実行後、サンプルユーザーを生成します
 
 ```
 $ rails db:seed
