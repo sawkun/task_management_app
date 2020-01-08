@@ -74,6 +74,7 @@ p {
 
 #top {
   color: #fff;
+  font-weight: bold;
   &:hover{
     color: #c0c0c0;
   }
@@ -81,6 +82,7 @@ p {
 
 #login {
   color: #fff;
+  font-weight: bold;
   &:hover{
     color: #c0c0c0;
   }
@@ -88,12 +90,22 @@ p {
 
 #users {
   color: #fff;
+  font-weight: bold;
+  &:hover{
+    color: #c0c0c0;
+  }
+}
+
+#task {
+  color: #fff;
+  font-weight: bold;
   &:hover{
     color: #c0c0c0;
   }
 }
 
 #dropdown-title {
+  font-weight: bold;
   color: #fff;
   background-color: #008080;
   &:hover{
