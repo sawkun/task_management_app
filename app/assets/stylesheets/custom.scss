@@ -23,6 +23,15 @@ textarea {
   margin-bottom: 10px;
 }
 
+#top-main {
+  background-color: rgba(255,255,255,0);
+}
+
+#top-main-title {
+  font-style: italic;
+  font-weight: bold;
+}
+
 /* タイポグラフィ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,6 +120,11 @@ p {
   &:hover{
     color: #c0c0c0;
   }
+}
+
+.dropdown-header {
+  background-color: rgba(200,200,200,0.5);
+  font-weight: bold;
 }
 
 /* デバッグウインドウ */
