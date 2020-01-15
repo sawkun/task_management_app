@@ -6,17 +6,17 @@
         <li><%= link_to "トップ", root_path, id: "top" %></li>
         <% if logged_in? %>
           <li><%= link_to "利用者一覧", '#', id: "users" %></li>
-          <li><%= link_to "タスク作成", '#', id: "task" %></li>
+          <li><%= link_to "タスク作成", new_user_task_path(current_user.id), id: "task" %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown-title">
               <%= current_user.name %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li class="dropdown-header">ユーザー</li>
-              <li><a href="/users/1">プロフィール</a></li>
-              <li><a href="/users/1/edit">設定</a></li>
+              <li><%= link_to "プロフィール", current_user %></li>
+              <li><%= link_to "設定", '#' %></li>
               <li class="dropdown-header">タスク</li>
-              <li><a href="/users/1/tasks">タスク一覧</a></li>
+              <li><%= link_to "タスク一覧", user_tasks_path(current_user.id) %></li>
               
               <li class="divider"></li>
               <li><a rel="nofollow" data-method="delete" href="/logout">ログアウト</a></li>

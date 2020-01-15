@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   post   '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   
-  get 'tasks/new', to: 'tasks#new'
-  get 'tasks/index', to: 'tasks#index'
   
-  resources :users
+  resources :users do
+    resources :tasks
+  end
 end
